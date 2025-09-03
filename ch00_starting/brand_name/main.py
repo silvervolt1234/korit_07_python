@@ -11,7 +11,7 @@
 당신의 밴드 이름은 차콜 윙봉입니다.
 '''
 
-logo = '''
+logo = r'''
 ___  ___          _                     __  ___  ___            _    _           _ 
 |  \/  |         | |                   / _| |  \/  |           | |  (_)         | |
 | .  . | __ _ ___| |_ ___ _ __    ___ | |_  | .  . | __ _ _ __ | | ___ _ __   __| |
@@ -23,8 +23,8 @@ ___  ___          _                     __  ___  ___            _    _          
 '''
 print(logo)
 pants_color = input('지금 입은 하의 색은 무엇입니까 >>> ')
-last_fool = input('마지막으로 먹은 음식은 무엇입니까? >>> ')
-brand_name = pants_color + ' ' + last_fool
-print('당신의 밴드 이름은 ' + pants_color + ' ' + last_fool + '입니다.')
+last_food = input('마지막으로 먹은 음식은 무엇입니까? >>> ')
+brand_name = pants_color + ' ' + last_food
+print('당신의 밴드 이름은 ' + pants_color + ' ' + last_food + '입니다.')
 print(f'당신의 밴드 이름은 {brand_name}입니다.')
 
