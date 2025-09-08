@@ -142,6 +142,10 @@ student1 객체를 생성하고
 
 getter를 활용해
 김일 학생의 나이는 20살로 파이썬 과목의 점수는 4.5점입니다 출력
+
+Java를 기준으로 보면 setter 내부에 비즈니스 로직이 들어갈수 있는데
+set_age()의 경우 내부에 로직으로 0살 미만 200살 초과는 입력 불가능하게 하기
+set_score()도 0.0 미만과 4.5 초과는 입력 불가능하게 비즈니스 로직 작성
 '''
 class Student:
     # setter 예시
@@ -149,13 +153,23 @@ class Student:
         self.name = name
 
     def set_age(self, age):
+        # 0 미만 200 초과 입력 불가능
+        if age < 0 or age > 200:
+            print('불가능한 나이 입력입니다')
+            return  # 메서드에 return하고 비우면 메서드 종료
         self.age = age
+
 
     def set_address(self, address):
         self.address = address
 
     def set_score(self, score):
+        if score < 0 or score > 4.5:
+            print('불가능한 점수 입력입니다')
+            return
         self.score = score
+
+
     # getter 예시
     def get_name(self):
         return self.name
