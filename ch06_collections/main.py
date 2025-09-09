@@ -199,8 +199,8 @@ for num in li01:
     print(num)
 
 # dictionary에서 같은 방식의 반복문을 활용하게 될 때
-# dictionary / JS Object에서 향상된 for문으로 반복문을 돌리면 keyrk skdhrldp
-# 딕셔너리명[key[로 작성해야 value 조회 가능
+# dictionary / JS Object에서 향상된 for문으로 반복문을 돌리면 key가 나오기에
+# 딕셔너리명[key]로 작성해야 value 조회 가능
 for key in dict1:
     print(dict1[key])
 
